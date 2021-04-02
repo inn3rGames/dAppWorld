@@ -1,31 +1,38 @@
 <script>
-	export let name;
 </script>
 
 <main>
-	<div class="border border-red-500 shadow-lg"> ME!!!</div>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <div class="flex items-center justify-center h-screen">
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-2xl overflow-hidden md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="md:flex-shrink-0">
+          <img
+            class="h-48 w-full object-scale-down md:w-48"
+            src="/img/inn3r.png"
+            alt="inn3r logo"
+          />
+        </div>
+        <div class="p-8">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+          >
+            Ready to go?
+          </div>
+          <a
+            href="https://inn3r.com"
+            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >Trying out different things</a
+          >
+          <p class="mt-2 text-gray-500">
+            Welcome to dAppWorld. Here starts your dev journey!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
